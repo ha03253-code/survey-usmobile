@@ -5,7 +5,7 @@
    ========================================================= */
 
 // PASTE THE SAME GOOGLE APPS SCRIPT WEB APP URL YOU USED IN script.js
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyClpyyz-OctfBpteR8ndDEE7YuwjQ7fpiB5cw1HwF5ZhWu_475UIuUZjEzhVhvWe8qCw/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzt60S2MOm_Pi_hxYbhVxpqn1JmId56iT4QtSxxAxmEGUKydwboaSGNG4MGCChP6wOBiw/exec";
 
 const loadingState = document.getElementById("loadingState");
 const errorState = document.getElementById("errorState");
