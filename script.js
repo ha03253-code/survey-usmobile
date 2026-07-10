@@ -6,7 +6,7 @@
 
 // 1. PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL BELOW
 //    (You get this after deploying google-apps-script.gs — see README.md)
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyClpyyz-OctfBpteR8ndDEE7YuwjQ7fpiB5cw1HwF5ZhWu_475UIuUZjEzhVhvWe8qCw/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzt60S2MOm_Pi_hxYbhVxpqn1JmId56iT4QtSxxAxmEGUKydwboaSGNG4MGCChP6wOBiw/exec";
 
 // ---------------------------------------------------------
 
