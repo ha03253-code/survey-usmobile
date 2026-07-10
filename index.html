@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How did we do today?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="card" id="card">
+
+    <!-- STEP 1: Rating buttons -->
+    <section id="step-rating" class="step">
+      <img src="assets/logo.png" alt="" class="logo" id="logoImg" onerror="this.style.display='none'">
+      <h1 class="title">How did we do today?</h1>
+      <p class="subtitle">Your feedback takes one click.</p>
+
+      <div class="ratings">
+        <button class="rating-btn" data-rating="Excellent" aria-label="Excellent">
+          <span class="emoji">😀</span>
+          <span class="label">Excellent</span>
+        </button>
+        <button class="rating-btn" data-rating="Good" aria-label="Good">
+          <span class="emoji">🙂</span>
+          <span class="label">Good</span>
+        </button>
+        <button class="rating-btn" data-rating="Okay" aria-label="Okay">
+          <span class="emoji">😐</span>
+          <span class="label">Okay</span>
+        </button>
+        <button class="rating-btn" data-rating="Poor" aria-label="Poor">
+          <span class="emoji">🙁</span>
+          <span class="label">Poor</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- STEP 2: Optional feedback box (Okay / Poor only) -->
+    <section id="step-feedback" class="step hidden">
+      <div class="chosen-emoji" id="chosenEmoji"></div>
+      <h1 class="title">What could we have done better?</h1>
+      <p class="subtitle">Optional — but we read every word.</p>
+
+      <textarea id="feedbackText" class="feedback-box" placeholder="Tell us more (optional)" maxlength="1000"></textarea>
+
+      <button id="submitFeedbackBtn" class="submit-btn">Submit</button>
+    </section>
+
+    <!-- STEP 3: Thank you -->
+    <section id="step-thanks" class="step hidden">
+      <div class="thanks-icon" id="thanksIcon">❤️</div>
+      <h1 class="title" id="thanksMessage">Thanks! We appreciate your feedback ❤️</h1>
+    </section>
+
+    <!-- Error state (no rating in URL / network issue) -->
+    <section id="step-error" class="step hidden">
+      <h1 class="title">Something went wrong</h1>
+      <p class="subtitle">Please try clicking the link from your email again.</p>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSAT Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin-style.css">
+</head>
+<body class="admin-body">
+
+  <div class="admin-wrap">
+    <header class="admin-header">
+      <h1>CSAT Dashboard</h1>
+      <button id="refreshBtn" class="refresh-btn">Refresh</button>
+    </header>
+
+    <div id="loadingState" class="loading-state">Loading responses...</div>
+    <div id="errorState" class="error-state hidden">
+      Couldn't load data. Check that SCRIPT_URL is set correctly in admin.js.
+    </div>
+
+    <div id="dashboard" class="dashboard hidden">
+
+      <section class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-number" id="statTotal">—</div>
+          <div class="stat-label">Total Responses</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="statExcellent">—</div>
+          <div class="stat-label">😀 Excellent</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="statGood">—</div>
+          <div class="stat-label">🙂 Good</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="statOkay">—</div>
+          <div class="stat-label">😐 Okay</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="statPoor">—</div>
+          <div class="stat-label">🙁 Poor</div>
+        </div>
+        <div class="stat-card highlight-good">
+          <div class="stat-number" id="statPositive">—</div>
+          <div class="stat-label">Positive %</div>
+        </div>
+        <div class="stat-card highlight-bad">
+          <div class="stat-number" id="statNegative">—</div>
+          <div class="stat-label">Negative %</div>
+        </div>
+      </section>
+
+      <section class="latest-section">
+        <h2>Latest Responses</h2>
+        <div class="table-wrap">
+          <table class="latest-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Rating</th>
+                <th>Feedback</th>
+                <th>Ticket</th>
+                <th>Agent</th>
+                <th>Customer</th>
+              </tr>
+            </thead>
+            <tbody id="latestBody">
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+<script src="admin.js"></script>
+</body>
+</html>
