@@ -5,7 +5,7 @@
    ========================================================= */
 
 // PASTE THE SAME GOOGLE APPS SCRIPT WEB APP URL YOU USED IN script.js
-const SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyClpyyz-OctfBpteR8ndDEE7YuwjQ7fpiB5cw1HwF5ZhWu_475UIuUZjEzhVhvWe8qCw/exec";
 
 const loadingState = document.getElementById("loadingState");
 const errorState = document.getElementById("errorState");
